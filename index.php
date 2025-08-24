@@ -1,7 +1,7 @@
 <?php 
 include __DIR__ . "/user/header.php";
 include __DIR__ . "/user/slider.php";
-include __DIR__ . "/config/connection.php";
+include __DIR__ . "/connection.php";
 ?>
 <title>Home Page</title>
 
