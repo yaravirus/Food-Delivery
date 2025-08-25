@@ -1,92 +1,96 @@
 <?php
-if (!isset($_SESSION)) {
-    session_start();
+if(!isset($_SESSION)){
+	session_start();
 }
 
-// Define base URL once
-if (!defined("BASE_URL")) {
-    // Change "/food_ordering_system/" to match your folder name in localhost
-    define("BASE_URL", "/food_ordering_system/");
-}
 ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    
-    <!-- Stylesheets -->
-    <link href="<?php echo BASE_URL; ?>assets/css/bootstrap.css" rel="stylesheet">
-    <link href="<?php echo BASE_URL; ?>assets/vendors/flat-icon/flaticon.css" rel="stylesheet">
+	<meta charset="utf-8">
+	
+	<!-- Stylesheets -->
+	<link href="/foodying/user/assets/css/bootstrap.css" rel="stylesheet">
 
-    <!-- Font Awesome CDN -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+	<link href="/foodying/user/assets/vendors/flat-icon/flaticon.css" rel="stylesheet">
 
-    <!-- Rev slider css -->
-    <link href="<?php echo BASE_URL; ?>assets/vendors/revolution/css/settings.css" rel="stylesheet">
-    <link href="<?php echo BASE_URL; ?>assets/vendors/revolution/css/layers.css" rel="stylesheet">
-    <link href="<?php echo BASE_URL; ?>assets/vendors/revolution/css/navigation.css" rel="stylesheet">
+	<!-- Font Awesome CDN -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 
-    <link href="<?php echo BASE_URL; ?>assets/css/style.css" rel="stylesheet">
-    <link href="<?php echo BASE_URL; ?>assets/css/responsive.css" rel="stylesheet">
+	<!-- Rev slider css -->
+	<link href="/foodying/user/assets/vendors/revolution/css/settings.css" rel="stylesheet">
+	<link href="/foodying/user/assets/vendors/revolution/css/layers.css" rel="stylesheet">
+	<link href="/foodying/user/assets/vendors/revolution/css/navigation.css" rel="stylesheet">
 
-    <link rel="shortcut icon" href="<?php echo BASE_URL; ?>assets/images/logo-02.png" type="image/x-icon">
-    <link rel="icon" href="<?php echo BASE_URL; ?>assets/images/logo-02.png" type="image/x-icon">
+	<link href="/foodying/user/assets/css/style.css" rel="stylesheet">
+	<link href="/foodying/user/assets/css/responsive.css" rel="stylesheet">
 
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&amp;family=Open+Sans:wght@400;600;700;800&amp;family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,700&amp;family=Poppins:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+	<link rel="shortcut icon" href="/foodying/user/assets/images/logo-02.png" type="image/x-icon">
+	<link rel="icon" href="/foodying/user/assets/images/logo-02.png" type="image/x-icon">
 
-    <!-- Responsive -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&amp;family=Open+Sans:wght@400;600;700;800&amp;family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,700&amp;family=Poppins:wght@300;400;500;600;700;800;900&amp;display=swap"
+		rel="stylesheet">
+
+	<!-- Responsive -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
+	<!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
 </head>
 
 <body>
-    <div class="page-wrapper">
 
-        <!-- Preloader -->
-        <div class="preloader"></div>
+	<div class="page-wrapper">
 
-        <header class="main-header">
-            <!--Header Top-->
-            <div class="header-top" style="background-color:#f2e39c; color:black">
-                <div class="auto-container clearfix">
-                    <div class="top-left">
-                        <ul class="info-list">
-                            <li>
-                                <a href="mailto:info@abc.co.in" style="color: black">
-                                    <b>InSecond</b>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="top-right clearfix">
-                        <ul class="social-box" style="display: flex; align-items: center; gap: 15px; list-style: none; margin: 0; padding: 0;">
-                            <li>
-                                <a href="#" style="color: black; font-weight: bold;">
-                                    <span class="fa fa-user-alt"></span> Hii' 
-                                    <?php echo isset($_SESSION["user_username"]) ? $_SESSION["user_username"] : "User"; ?>
-                                </a>
-                            </li>
+		<!-- Preloader -->
+		<div class="preloader"></div>
 
-                            <li>
-                                <a href="<?php echo BASE_URL; ?>user/view_cart.php" class="icon flaticon-shopping-cart" style="color: black; position: relative;">
-                                    <span class="total-cart" 
-                                        style="background-color: #a40301; color:white; border-radius: 50%; padding: 2px 6px; font-size: 12px; position: absolute; top: -8px; right: -10px;">
-                                        <?php echo load_cart_data2(); ?>
-                                    </span>
-                                </a>
-                            </li>
+		<header class="main-header">
+			<!--Header Top-->
+			<div class="header-top" style="background-color:#f2e39c; color:black">
+				<div class="auto-container clearfix">
+					<div class="top-left">
+						<!-- Info List -->
+						<ul class="info-list">
 
-                            <li>
-                                <a href="<?php echo BASE_URL; ?>admin/" 
-                                    style="color: black; font-weight: bold; text-decoration: none; padding: 5px 10px; border: 1px solid #a40301; border-radius: 5px; transition: 0.3s;">
-                                    Admin
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <!-- End Header Top -->
+							<li><a href="index.php" style="color: black"></span>
+									<b>InSecond</b></a></li>
+						</ul>
+					</div>
+					<div class="top-right clearfix">
+						<!-- User Info -->
+						<ul class="social-box" style="display: flex; align-items: center; gap: 15px; list-style: none; margin: 0; padding: 0;">
+						<li>
+							<a href="#" style="color: black; font-weight: bold;">
+							<span class="fa fa-user-alt"></span> Hii' <?php echo isset($_SESSION["user_username"]) ? $_SESSION["user_username"] : "User";  ?>
+							</a>
+						</li>
+
+						<!-- Cart Button -->
+						<li>
+							<a href="view_cart.php" class="icon flaticon-shopping-cart" style="color: black; position: relative;">
+							<span class="total-cart" 
+								style="background-color: #a40301; color:white; border-radius: 50%; padding: 2px 6px; font-size: 12px; position: absolute; top: -8px; right: -10px;">
+								<?php echo load_cart_data2(); ?>
+							</span>
+							</a>
+						</li>
+
+						<!-- Admin Link -->
+						<li>
+							<a href="http://localhost/foodying/admin/" 
+							style="color: black; font-weight: bold; text-decoration: none; padding: 5px 10px; border: 1px solid #a40301; border-radius: 5px; transition: 0.3s;">
+							Admin
+							</a>
+						</li>
+						</ul>
+
+						
+					</div>
+				</div>
+			</div>
+			<!-- End Header Top -->
 
 			<!-- Header Upper -->
 			<div class="header-upper">
@@ -94,7 +98,7 @@ if (!defined("BASE_URL")) {
 					<div class="auto-container clearfix">
 						<!--Info-->
 						<div class="logo-outer">
-							<div class="logo" style="margin-top: -20px;"><a href="index-2.html"><img src="assets/images/logo-02.png" alt=""
+							<div class="logo" style="margin-top: -20px;"><a href="index.php"><img src="foodying/user/assets/images/logo-02.png" alt=""
 										title=""></a></div>
 						</div>
 
@@ -113,19 +117,19 @@ if (!defined("BASE_URL")) {
 
 								<div class="collapse navbar-collapse clearfix" id="navbarSupportedContent">
 								<ul class="navigation clearfix">
-									<li><a href="index.php">Home</a></li>
-									<li><a href="gallery.php">Gallery</a></li>
-									<li><a href="contact.php">Contact</a></li>
+									<li><a href="/foodying/index.php">Home</a></li>
+									<li><a href="user/gallery.php">Gallery</a></li>
+									<li><a href="user/contact.php">Contact</a></li>
 
 									<li class="current dropdown"><a href="#">User</a>
 										<ul>
 										<?php if (!isset($_SESSION["user_username"])) { ?>
-											<li><a href="Login.php">Login</a></li>
-											<li><a href="Register.php">Register</a></li>
+											<li><a href="user/Login.php">Login</a></li>
+											<li><a href="user/Register.php">Register</a></li>
 										<?php } else { ?>
-											<li><a href="edit_profile.php">Edit Profile</a></li>
-											<li><a href="view_my_order.php">View Order</a></li>
-											<li><a href="logout.php">Logout</a></li>
+											<li><a href="user/edit_profile.php">Edit Profile</a></li>
+											<li><a href="user/view_my_order.php">View Order</a></li>
+											<li><a href="user/logout.php">Logout</a></li>
 										<?php } ?>
 										</ul>
 									</li>
@@ -152,7 +156,7 @@ if (!defined("BASE_URL")) {
 				<div class="auto-container clearfix">
 					<!--Logo-->
 					<div class="logo pull-left">
-						<a href="index-2.html" class="img-responsive"><img src="assets/images/logo-02.png" alt=""
+						<a href="index-2.html" class="img-responsive"><img src="foodying/user/assets/images/logo-02.png" alt=""
 								title="" height="90" width="90" style="margin-top: -10px;"></a>
 					</div>
 
@@ -175,17 +179,17 @@ if (!defined("BASE_URL")) {
 									</li>
 
 
-									<li><a href="gallery.php">Gallery</a></li>
+									<li><a href="user/gallery.php">Gallery</a></li>
 
 									<li class="dropdown"><a href="#">User</a>
 										<ul>
 										<?php if (!isset($_SESSION["user_username"])) { ?>
-											<li><a href="Login.php">Login</a></li>
-											<li><a href="Register.php">Register</a></li>
+											<li><a href="user/Login.php">Login</a></li>
+											<li><a href="user/Register.php">Register</a></li>
 										<?php } else { ?>
-											<li><a href="edit_profile.php">Edit Profile</a></li>
-											<li><a href="view_my_order.php">View Order</a></li>
-											<li><a href="logout.php">Logout</a></li>
+											<li><a href="user/edit_profile.php">Edit Profile</a></li>
+											<li><a href="user/view_my_order.php">View Order</a></li>
+											<li><a href="user/logout.php">Logout</a></li>
 										<?php } ?>
 										</ul>
 									</li>

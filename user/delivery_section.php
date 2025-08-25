@@ -6,7 +6,7 @@
 					<div class="image-column col-lg-6 col-md-12 col-sm-12">
 						<div class="inner-column wow slideInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
 							<div class="image">
-								<img src="assets/images/resource/pizzaboy.png" alt="" />
+								<img src="/foodying/user/assets/images/resource/pizzaboy.png" alt="" />
 							</div>
 						</div>
 					</div>

@@ -5,7 +5,7 @@ if(!isset($_SESSION["checkout"]))
 {
     ?>
     <script type="text/javascript">
-        window.location="index.php";
+        window.location="/foodying/index.php";
     </script>
     <?php
 
@@ -14,13 +14,13 @@ if(!isset($_SESSION['user_username']))
 {
     ?>
     <script type="text/javascript">
-        window.location="index.php";
+        window.location="/foodying/index.php";
     </script>
     <?php
 
 }
 $_SESSION["address_verify"]="yes";
-include "../admin/connection.php";
+include "../connection.php";
 //include "slider.php";
 
 $firstname="";
@@ -52,7 +52,7 @@ while($row=mysqli_fetch_array($res))
 
             ?>
             <script type="text/javascript">
-                window.location="index.php";
+                window.location="/foodying/index.php";
             </script>
         <?php
         }
@@ -61,7 +61,7 @@ while($row=mysqli_fetch_array($res))
 
         ?>
             <script type="text/javascript">
-                window.location="index.php";
+                window.location="/foodying/index.php";
             </script>
         <?php
 

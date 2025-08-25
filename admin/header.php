@@ -113,7 +113,7 @@
         <img class="user-avatar rounded-circle" src="images/admin.jpg" alt="User Avatar" style="width:40px; height:40px;">
     </a>
     <h4>Hii' ADMIN</h4>
-    <a href="http://localhost/food_ordering_system/user/index.php " 
+    <a href="http://localhost/foodying/user/" 
        style="color: black; font-weight: bold; text-decoration: none; padding: 5px 10px; 
               border: 1px solid #a40301; border-radius: 5px; transition: 0.3s;">
        UserPanel

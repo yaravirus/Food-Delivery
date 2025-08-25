@@ -1,4 +1,4 @@
-<footer class="main-footer" style="background-image: url(assets/images/background/4.png)">
+<footer class="main-footer" style="background-image: url(/foodying/user/assets/images/background/4.png)">
 			<div class="auto-container">
 
 				<!-- Widgets Section -->
@@ -31,7 +31,7 @@
 							<!-- Logo Widget -->
 							<div class="footer-widget logo-widget">
 								<div class="logo">
-									<a href="index-2.html"><img src="assets/images/logo-02.png" alt="" style="margin-top: -20px;" /></a>
+									<a href="index-2.html"><img src="/foodying/user/assets/images/logo-02.png" alt="" style="margin-top: -20px;" /></a>
 								</div>
 								<div class="text">Food Plaza <br> 336, abc Street,<br> Rajkot, 360004
 								</div>
@@ -108,27 +108,27 @@
 	</div>
 
 	<!--Scroll to top-->
-	<script src="assets/js/jquery.js"></script>
-	<script src="assets/js/parallax.min.js"></script>
-	<script src="assets/js/popper.min.js"></script>
-	<script src="assets/js/jquery-ui.js"></script>
-	<script src="assets/js/bootstrap.min.js"></script>
+	<script src="/foodying/user/assets/js/jquery.js"></script>
+	<script src="/foodying/user/assets/js/parallax.min.js"></script>
+	<script src="/foodying/user/assets/js/popper.min.js"></script>
+	<script src="/foodying/user/assets/js/jquery-ui.js"></script>
+	<script src="/foodying/user/assets/js/bootstrap.min.js"></script>
 
 	<!-- Rev slider js -->
-	<script src="assets/vendors/revolution/js/jquery.themepunch.tools.min.js"></script>
-	<script src="assets/vendors/revolution/js/jquery.themepunch.revolution.min.js"></script>
-	<script src="assets/vendors/revolution/js/extensions/revolution.extension.actions.min.js"></script>
-	<script src="assets/vendors/revolution/js/extensions/revolution.extension.video.min.js"></script>
-	<script src="assets/vendors/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
-	<script src="assets/vendors/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
-	<script src="assets/vendors/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+	<script src="/foodying/user/assets/vendors/revolution/js/jquery.themepunch.tools.min.js"></script>
+	<script src="/foodying/user/assets/vendors/revolution/js/jquery.themepunch.revolution.min.js"></script>
+	<script src="/foodying/user/assets/vendors/revolution/js/extensions/revolution.extension.actions.min.js"></script>
+	<script src="/foodying/user/assets/vendors/revolution/js/extensions/revolution.extension.video.min.js"></script>
+	<script src="/foodying/user/assets/vendors/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+	<script src="/foodying/user/assets/vendors/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+	<script src="/foodying/user/assets/vendors/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
 
-	<script src="assets/js/jquery.fancybox.js"></script>
-	<script src="assets/js/owl.js"></script>
-	<script src="assets/js/wow.js"></script>
-	<script src="assets/js/mixitup.js"></script>
-	<script src="assets/js/appear.js"></script>
-	<script src="assets/js/script.js"></script>
+	<script src="/foodying/user/assets/js/jquery.fancybox.js"></script>
+	<script src="/foodying/user/assets/js/owl.js"></script>
+	<script src="/foodying/user/assets/js/wow.js"></script>
+	<script src="/foodying/user/assets/js/mixitup.js"></script>
+	<script src="/foodying/user/assets/js/appear.js"></script>
+	<script src="/foodying/user/assets/js/script.js"></script>
 
 </body>
 </html>

@@ -3,7 +3,7 @@
 				<ul>
 					<li data-index="rs-1587" data-transition="fade" data-slotamount="default" data-hideafterloop="0"
 						data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="300"
-						data-thumb="assets/images/main-slider/slider-item-1.png" data-rotate="0"
+						data-thumb="user/assets/images/main-slider/slider-item-1.png" data-rotate="0"
 						data-saveperformance="off" data-title="Creative" data-param1="01" data-param2="" data-param3=""
 						data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9=""
 						data-param10="" data-description="">
@@ -68,7 +68,7 @@
 								data-textAlign="['right','right','right','right']" data-paddingtop="[0,0,0,0]"
 								data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]"
 								data-paddingleft="[0,0,0,0]" style="z-index: -1;border-width:0px;cursor:pointer;"><img
-									src="assets/images/main-slider/slider-item-1.png" alt=""
+									src="user/assets/images/main-slider/slider-item-1.png" alt=""
 									data-ww="['591px','500px','400px','200px','200px']"
 									data-hh="['447px','400px','310px','150px','150px']" data-no-retina />
 							</div>
@@ -76,7 +76,7 @@
 					</li>
 					<li data-index="rs-1588" data-transition="fade" data-slotamount="default" data-hideafterloop="0"
 						data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="300"
-						data-thumb="assets/images/main-slider/slider-item-2.png" data-rotate="0"
+						data-thumb="user/assets/images/main-slider/slider-item-2.png" data-rotate="0"
 						data-saveperformance="off" data-title="Creative" data-param1="01" data-param2="" data-param3=""
 						data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9=""
 						data-param10="" data-description="">
@@ -140,7 +140,7 @@
 								data-textAlign="['right','right','right','right']" data-paddingtop="[0,0,0,0]"
 								data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]"
 								data-paddingleft="[0,0,0,0]" style="z-index: -1;border-width:0px;cursor:pointer;"><img
-									src="assets/images/main-slider/slider-item-2.png" alt=""
+									src="user/assets/images/main-slider/slider-item-2.png" alt=""
 									data-ww="['723px','500px','400px','200px','200px']"
 									data-hh="['626px','440px','340px','160px','160px']" data-no-retina />
 							</div>
@@ -149,7 +149,7 @@
 					</li>
 					<li data-index="rs-1589" data-transition="fade" data-slotamount="default" data-hideafterloop="0"
 						data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="300"
-						data-thumb="assets/images/main-slider/slider-item-3.png" data-rotate="0"
+						data-thumb="user/assets/images/main-slider/slider-item-3.png" data-rotate="0"
 						data-saveperformance="off" data-title="Creative" data-param1="01" data-param2="" data-param3=""
 						data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9=""
 						data-param10="" data-description="">
@@ -213,7 +213,7 @@
 								data-textAlign="['right','right','right','right']" data-paddingtop="[0,0,0,0]"
 								data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]"
 								data-paddingleft="[0,0,0,0]" style="z-index: -1;border-width:0px;cursor:pointer;"><img
-									src="assets/images/main-slider/slider-item-3.png" alt=""
+									src="user/assets/images/main-slider/slider-item-3.png" alt=""
 									data-ww="['628px','500px','400px','200px','200px']"
 									data-hh="['539px','400px','330px','175px','175px']" data-no-retina />
 							</div>

@@ -1,7 +1,7 @@
 <?php 
-include __DIR__ . "/user/header.php";
-include __DIR__ . "/user/slider.php";
-include __DIR__ . "/connection.php";
+include "user/header.php";      // header
+include "user/slider.php";      // slider
+include "connection.php"; // DB connection
 ?>
 <title>Home Page</title>
 
@@ -28,6 +28,7 @@ include __DIR__ . "/connection.php";
                 </ul>
             </div>
             
+            <!-- Product List -->
             <div class="filter-list row clearfix">
                 <?php
                 $res = mysqli_query($link,"SELECT * FROM food");
@@ -36,14 +37,19 @@ include __DIR__ . "/connection.php";
                     <div class="product-block all mix <?php echo $row["food_category"];?> col-lg-3 col-md-6 col-sm-12">
                         <div class="inner-box">
                             <figure class="image-box">
-                                <img src="../admin/<?php echo $row["food_image"]; ?>" alt="">
+                                <!-- Corrected image path -->
+                                <img src="admin/<?php echo $row["food_image"]; ?>" alt="">
                             </figure>
                             <div class="lower-content">
-                                <h4><a href="food_description.php?id=<?php echo $row["id"];?>"><?php echo $row["food_name"]; ?></a></h4>
+                                <h4>
+                                    <a href="user/food_description.php?id=<?php echo $row["id"];?>">
+                                        <?php echo $row["food_name"]; ?>
+                                    </a>
+                                </h4>
                                 <div class="text"><?php echo $row["food_description"];?></div>
                                 <div class="price">₹<?php echo $row["food_discount_price"];?></div>
                                 <div class="lower-box">
-                                    <a href="food_description.php?id=<?php echo $row["id"];?>" class="theme-btn btn-style-five">
+                                    <a href="user/food_description.php?id=<?php echo $row["id"];?>" class="theme-btn btn-style-five">
                                         <span class="txt">Order Now</span>
                                     </a>
                                 </div>
@@ -59,7 +65,7 @@ include __DIR__ . "/connection.php";
 </section>
 
 <?php 
-include __DIR__ ."/user/delivery_section.php";
-include __DIR__ ."/user/service_section.php";
-include __DIR__ ."/user/footer.php";
+include "user/delivery_section.php";
+include "user/service_section.php";
+include "user/footer.php";
 ?>
