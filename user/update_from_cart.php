@@ -4,7 +4,7 @@ if (session_status() == PHP_SESSION_NONE) {
 }
 $id = $_GET["id"];
 $qty_get = $_GET["qty"];
-include "../connection.php";
+include __DIR__ ."../connection.php";
 $food_img="";
 $food_name="";
 $food_price="";

@@ -1,7 +1,7 @@
 <?php
         session_start();
-        include("header.php");
-        include("../connection.php");
+        include __DIR__ ."header.php";
+        include __DIR__ ."../connection.php";
 ?>
 <div class="breadcrumbs">
     <div class="col-sm-4">
@@ -61,5 +61,5 @@
 </div><!-- /#right-panel -->
 
 <?php
-        include("footer.php");
+        include __DIR__ ."footer.php";
 ?>

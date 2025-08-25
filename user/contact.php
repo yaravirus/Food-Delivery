@@ -1,4 +1,4 @@
-<?php include "header.php";?>
+<?php include __DIR__ ."header.php";?>
 
 <title>Contact</title>	
 
@@ -16,7 +16,7 @@
 </section>
 	
 <?php 
-include "delivery_section.php";
-include "service_section.php";
-include "footer.php";
+include __DIR__ ."delivery_section.php";
+include __DIR__ ."service_section.php";
+include __DIR__ ."footer.php";
 ?>

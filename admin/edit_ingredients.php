@@ -1,6 +1,6 @@
 <?php
-        include("../connection.php");
-        include("header.php");
+        include __DIR__ ."../connection.php";
+        include __DIR__ ."header.php";
         $id=$_GET["id"];
         $categories_name="";
         $res=mysqli_query($link,"SELECT * FROM food_ingredients WHERE id=$id");

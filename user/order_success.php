@@ -20,7 +20,7 @@ if(!isset($_SESSION['user_username']))
 
 }
 $_SESSION["address_verify"]="yes";
-include "../connection.php";
+include __DIR__ ."../connection.php";
 //include "slider.php";
 
 $firstname="";

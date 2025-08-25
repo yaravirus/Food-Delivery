@@ -1,7 +1,7 @@
 <?php
 session_start();
-include("../connection.php");
-include("header.php");
+include __DIR__ ."../connection.php";
+include __DIR__ ."header.php";
 
 $id = intval($_GET["id"]);
 
@@ -321,4 +321,4 @@ if (isset($_POST["submit1"])) {
 <script src="cropping_js/croppie.js"></script>
 <script src="cropping_js/exif.js"></script>
 
-<?php include("footer.php"); ?>
+<?php include __DIR__ ."footer.php"; ?>

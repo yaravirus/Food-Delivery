@@ -1,6 +1,6 @@
 <?php
-        include("../connection.php");
-        include("header.php");
+       include __DIR__ ."../connection.php";
+       include __DIR__ ."header.php";
 ?>
    <div class="breadcrumbs">
             <div class="col-sm-4">
@@ -81,5 +81,5 @@
 
 
 <?php
-        include("footer.php");
+        include __DIR__ ."footer.php";
 ?>

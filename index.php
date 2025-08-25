@@ -1,7 +1,7 @@
 <?php 
-include "user/header.php";      // header
-include "user/slider.php";      // slider
-include "connection.php"; // DB connection
+include __DIR__ ."user/header.php"; // header
+include __DIR__ ."user/slider.php";      // slider
+include __DIR__ ."connection.php"; // DB connection
 ?>
 <title>Home Page</title>
 
@@ -65,7 +65,7 @@ include "connection.php"; // DB connection
 </section>
 
 <?php 
-include "user/delivery_section.php";
-include "user/service_section.php";
-include "user/footer.php";
+include __DIR__ ."user/delivery_section.php";
+include __DIR__ ."user/service_section.php";
+include __DIR__ ."user/footer.php";
 ?>

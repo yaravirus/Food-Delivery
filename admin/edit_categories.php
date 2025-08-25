@@ -1,6 +1,6 @@
 <?php
-        include("../connection.php");
-        include("header.php");
+        include __DIR__ ."../connection.php";
+        include __DIR__ ."header.php";
         $id=$_GET["id"];
         $categories_name="";
         $res=mysqli_query($link,"SELECT * FROM food_categories WHERE id=$id");
@@ -114,5 +114,5 @@
 
 ?>
 <?php
-        include("footer.php");
+        include __DIR__ ."footer.php";
 ?>

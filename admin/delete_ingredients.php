@@ -1,5 +1,5 @@
 <?php
-include "../connection.php";
+include __DIR__ ."../connection.php";
 $id=$_GET["id"];
 mysqli_query($link,"DELETE FROM food_ingredients WHERE id=$id");
 
