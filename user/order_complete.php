@@ -1,6 +1,6 @@
 <?php
 session_start();
-include __DIR__ ."header.php";
+include "header.php";
 //include "slider.php";
 ?>
 <title>Order Success Page</title>
@@ -33,9 +33,9 @@ include __DIR__ ."header.php";
 
 
 <?php
-include __DIR__ ."delivery_section.php";
-include __DIR__ ."service_section.php";
-include __DIR__ ."footer.php";
+include "delivery_section.php";
+include "service_section.php";
+include "footer.php";
 ?>
 
 

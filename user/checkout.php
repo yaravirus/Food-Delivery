@@ -1,6 +1,6 @@
 <?php
 session_start();
-include __DIR__ ."../connection.php";
+include "../connection.php";
 
 // Check if cart_count is set
 if (!isset($_SESSION["cart_count"])) {

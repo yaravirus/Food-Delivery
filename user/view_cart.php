@@ -1,7 +1,7 @@
 <?php 
 session_start();
-include __DIR__ ."header.php";
-include __DIR__ ."../connection.php"; 
+include "header.php";
+include "../connection.php"; 
 ?>
 <title>Viewcart</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
@@ -230,7 +230,7 @@ function update_product(tb_id, qtyid) {
 }
 </script>
 
-<?php include __DIR__ ."footer.php"; ?>
+<?php include "footer.php"; ?>
 
 <!-- Scripts -->
 <script src="assets/js/jquery.js"></script>

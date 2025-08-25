@@ -1,7 +1,7 @@
 <?php
 session_start();
-include __DIR__ ."header.php";?>
-<?php include __DIR__ ."../connection.php";
+include "header.php";?>
+<?php include "../connection.php";
 $_SESSION['address_verify']="yes";
 ?>
 
@@ -153,8 +153,8 @@ if (isset($_POST["verify"])) {
 
 ?>
 <?php 
-include __DIR__ ."delivery_section.php";
-include __DIR__ ."service_section.php";
-include __DIR__ ."footer.php";
+include "delivery_section.php";
+include "service_section.php";
+include "footer.php";
 ?>
 

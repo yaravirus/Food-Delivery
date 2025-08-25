@@ -1,5 +1,5 @@
 <?php
-        include __DIR__ ."../connection.php";
+        include("../connection.php");
 ?>
 
 

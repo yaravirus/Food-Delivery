@@ -1,7 +1,7 @@
 <?php
 session_start();
-include __DIR__ ."../connection.php";
-include __DIR__ ."header.php";
+include("../connection.php");
+include("header.php");
 
 $successMsg = "";
 $errorMsg   = "";
@@ -278,4 +278,4 @@ if (isset($_POST["submit1"])) {
 <script src="cropping_js/croppie.js"></script>
 <script src="cropping_js/exif.js"></script>
 
-<?php include __DIR__ ."footer.php"; ?>
+<?php include("footer.php"); ?>

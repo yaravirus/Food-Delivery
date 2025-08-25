@@ -1,5 +1,5 @@
-<?php include __DIR__ ."header.php"; ?>
-<?php include __DIR__ ."../connection.php"; ?>
+<?php include "header.php"; ?>
+<?php include "../connection.php"; ?>
 
 <?php
 
@@ -152,7 +152,7 @@ while($row = mysqli_fetch_array($res)){
     }
 </script>
 
-<?php include __DIR__ ."footer.php"; ?>
+<?php include "footer.php"; ?>
 
 <!-- Scripts -->
 <script src="assets/js/jquery.js"></script>

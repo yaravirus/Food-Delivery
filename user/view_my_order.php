@@ -5,8 +5,8 @@ if(!isset($_SESSION)){
 
 ?>
 <?php 
-include __DIR__ ."../connection.php";
-include __DIR__ ."header.php";
+include "../connection.php";
+include "header.php";
 ?>
 <title>My Order</title>
 
@@ -61,7 +61,7 @@ include __DIR__ ."header.php";
 </section>
 
 <?php 
-include __DIR__ ."delivery_section.php";
-include __DIR__ ."service_section.php";
-include __DIR__ ."footer.php";
+include "delivery_section.php";
+include "service_section.php";
+include "footer.php";
 ?>
